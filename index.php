@@ -25,4 +25,16 @@ $sql .= "INSERT INTO Student VALUES (8, 'pooja', 'karad', '55');";
 $sql .= "INSERT INTO Student VALUES (9, 'komal', 'abad', '55');";
 $sql .= "INSERT INTO Student VALUES (10, 'shreya', 'abad', '55');";
 $sql .= "INSERT INTO Student VALUES (11, 'mayuri', 'avasari', '55')";
+  if ($conn->multi_query($sql) === TRUE) {
+    echo "New records inserted successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+
+}
+?>
+
+</body>
 </html>
