@@ -7,9 +7,9 @@
 </form>
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "ssmyserver.mysql.database.azure.com";
+$username = "shashi";
+$password = "srsarvaiya007@";
 $dbname = "ssdbase";
 // Create connection
 $conn = new mysqli($servername, $username, $password,$dbname);
